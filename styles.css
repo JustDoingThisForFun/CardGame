@@ -1,16 +1,18 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
 body {
-margin: 0;
-display: grid;
-grid-template-columns: repeat(2, 4rem);
-grid-template-rows: 7rem 2rem 7rem;
-gap: .5rem;
-cursor: pointer;
-justify-content: center;
-padding-top: 1rem;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 4rem);
+    grid-template-rows: 7rem 2rem 7rem;
+    gap: .5rem;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
 .deck {
@@ -42,15 +44,15 @@ padding-top: 1rem;
 }
 
 .card {
-position: relative;
-height: 100%;
-width: 100%;
-border: 1px solid black;
-border-radius: .5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 4rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
 }
 
 .card.red {
@@ -63,9 +65,9 @@ font-size: 4rem;
 
 .card::before,
 .card::after {
-position: absolute;
-content: attr(data-value);
-font-size: 1rem;
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
 }
 
 .card::before {

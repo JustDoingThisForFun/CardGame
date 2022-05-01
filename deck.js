@@ -10,6 +10,14 @@ export default class Deck {
         return this.cards.length;
     }
 
+    pop() {
+        return this.cards.shift();
+    }
+
+    push(card) {
+        this.cards.push(card);
+    }
+
     // Looping through all cards and swapping with other cards so it shuffles them by random properly
     shuffle() {
         for (let i = this.numberOfCards - 1; i > 0; i--) {
@@ -30,6 +38,7 @@ class Card {
     get color() {
         return this.suit === '♣' || this.suit === '♠' ? 'black' : 'red';
     }
+    
 
     getHTML() {
         const cardDiv = document.createElement('div');
