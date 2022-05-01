@@ -5,6 +5,20 @@ export default class Deck {
     constructor(cards = freshDeck()) {
         this.cards = cards;
     }
+
+    get numberOfCards() {
+        return this.cards.length;
+    }
+
+    // Looping through all cards and swapping with other cards so it shuffles them by random properly
+    shuffle() {
+        for (let i = this.numberOfCards - 1; i > 0; i--) {
+            const newIndex = Math.floor(Math.random() * (i + 1))
+            const oldValue = this.cards[newIndex];
+            this.cards[newIndex] = this.cards[i];
+            this.cards[i] = oldValue;
+        }
+    }
 }
 
 class Card {
