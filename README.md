@@ -7,8 +7,11 @@ Highest Card Wins!
 
 Game works as this
 
-You player against a computer for the highest card, winner gets its card back.
+You play against a computer for the highest card, winner gets its card back.
 
-Same card will not change your deck as it's draw.
+Same card value will not change your deck as it's draw.
 
 Once the player or computer reaches 0 cards the game is over and a winner is decieded.
+
+
+This project was made mainly for fun and focuses on logic rather then design.
